@@ -20,10 +20,10 @@
         </div>
     </nav>
 
-    <header class="page-header">
+    <header class="hero">
         <div class="container">
             <h1>Development Logs</h1>
-            <p>Documenting my journey, one project at a time</p>
+            <p>My journey, one project at a time</p>
         </div>
     </header>
 
@@ -32,71 +32,131 @@
             <!-- Devlog Entry Example -->
             <article class="devlog-entry">
                 <div class="devlog-header">
-                    <h2>Project Title: My Awesome App</h2>
-                    <span class="devlog-date">January 4, 2026</span>
+                    <h2>zi(g)ameboy</h2>
+                    <span class="devlog-description">Here begins my fascination with the Zig programming language.</span> 
+                    <span class="devlog-date">Began April 2025</span>
                 </div>
                 <div class="devlog-tags">
-                    <span class="tag">JavaScript</span>
-                    <span class="tag">React</span>
-                    <span class="tag">Node.js</span>
+                    <span class="tag">Zig</span>
+                    <span class="tag">Low-level programming</span>
+                    <!-- <span class="tag">React</span> -->
+                    <!-- <span class="tag">Node.js</span> -->
                 </div>
                 <div class="devlog-content">
                     <h3>What I'm Building</h3>
-                    <p>
-                        This week I started working on a new web application that solves [problem]. 
-                        The goal is to create a seamless user experience while maintaining clean, scalable code.
-                    </p>
+                        <p>
+                            It's simple on its face: A Gameboy!
+                            <br>In more words, its a cycle-accurate emulation of the original DMG Gameboy (GBC planned), that aims to replicate the real behavior and timing quirks that children of the 90s grew up on.
+                            Along with that I want it to be accessible to others, so I will be porting it to WebASM, which Zig makes incredibly easy. 
+                        </p>
+                    
                     <h3>Progress Update</h3>
-                    <ul>
-                        <li>✅ Set up project structure and dependencies</li>
-                        <li>✅ Implemented basic UI components</li>
-                        <li>🔄 Working on state management</li>
-                        <li>📋 Next: API integration</li>
-                    </ul>
+                        <ul>
+                            <h4>So far I have:</h4> 
+                                <li>Designed the core elements of the system (CPU, GPU (PPU), MMIO and<br> timing constraints)</li>
+                            <h4>Currently I am:</h4> 
+                                <li>Working out kinks with timing and fixing failing test cases.</li>
+                                <li>Designing a performant rendering system that stays true to the original hardware.</li>
+                        </ul>
+
                     <h3>Challenges & Solutions</h3>
-                    <p>
-                        Ran into some issues with [challenge]. After researching and experimenting, 
-                        I discovered that [solution] works much better.
-                    </p>
+                        <p>
+                            This project contained many challenges, but some of the most persistent and interesting ones include:
+                        </p>
+                        <ul>
+                            <li> <b>Synchronization and timing</b> | 
+                                Getting the CPU, PPU, timers, and other peripherals to remain in sync with each other for millions of cycles required a good amount of upfront thought and careful design. I use a <b>shared clock ideology</b>, where the <b>CPU syncs real-time, and races to keep up with where it should be and peripherals walk in lockstep</b> with the CPU. If we end up slightly ahead, the system just sleeps until it's behind again. This keeps everything synced with <b>real-time, and true to the original hardware</b>'s 59.7 FPS.</li>
+
+                            <li> <b>Edge cases and nuance</b> | 
+                                Systems like these have <b>lots of little things</b> that need to be considered along with the bigger picture. Finding what these little things are, and being able to <b>handle them gracefully</b> within the system that I created was highly motivating and <b>built into the design</b>.</li>
+                        </ul>
+                    
                     <h3>What I Learned</h3>
-                    <p>
-                        This project taught me the importance of [lesson]. I also discovered a new technique for [skill].
-                    </p>
+                        <p>
+                            This project taught me a lot, including but not limited to: 
+                        </p>
+                        <ul>
+                            <li>the essence of computers and why they work,</li> 
+                            <li>the importance of foresight and planning,</li>
+                            <li>how small hardware quirks (like interrupt timing or VRAM access rules) can force you to rethink otherwise clean abstractions,</li>
+                            <li>how to deal with truly difficult and elusive problems,</li>
+                            <li>the utter madness of computer engineers and programmers in the 80s and 90s,</li>
+                        </ul>
+
+                    <h3>Why?</h3>
+                        <p>
+                            I learned about a new programming language called <a href="https://ziglang.org/">Zig</a> and thought it was an interesting approach to programming that aligns with my philosophy.
+                        </p>
+                        <p>
+                            I wanted to learn more about low-level programming and how computers really work, even though I kinda already had a good idea of this I hadn't truly <i>done</i> it yet.
+                            <br>So, after creating a simple snake game in the terminal, as well as a Chip8 Emulator, I decided something bigger was in order.
+                            <br>Prior to this project, I'd completed many projects in Python, a few in Java and C, but none of them hit me with the same enjoyment that making a complete retro game console in Zig did.
+                        </p>
+                        <p>
+                            I would not be shocked if Zig continues to dominate my projects in scenarios where it is an option.
+                        </p>
                 </div>
                 <div class="devlog-links">
-                    <a href="https://github.com/krypticlogan/project-name" target="_blank" class="btn-small">
+                    <a href="https://github.com/krypticlogan/gb" class="btn-small">
                         <i class="fab fa-github"></i> View on GitHub
                     </a>
                 </div>
             </article>
 
-            <!-- Add more devlog entries below -->
             <article class="devlog-entry">
                 <div class="devlog-header">
-                    <h2>Learning New Tech Stack</h2>
-                    <span class="devlog-date">December 28, 2025</span>
+                    <h2>musiStats</h2>
+                    <span class="devlog-description">A music app for personal and collective discovery.</span> 
+                    <span class="devlog-date">Began June 2023</span>
                 </div>
                 <div class="devlog-tags">
                     <span class="tag">Python</span>
                     <span class="tag">FastAPI</span>
                 </div>
                 <div class="devlog-content">
-                    <h3>What I'm Exploring</h3>
-                    <p>
-                        Diving deep into backend development with Python and FastAPI. 
-                        The framework's modern approach to building APIs is impressive.
-                    </p>
-                    <h3>Key Takeaways</h3>
-                    <ul>
-                        <li>Type hints make development much smoother</li>
-                        <li>Auto-generated documentation is a game-changer</li>
-                        <li>Async/await patterns improve performance</li>
-                    </ul>
+                    <h3>What is it?</h3>
+                        <p>
+                            Put simply, it's an app to build and grow your musical personality, keeping track <br> (and offering control) every step of the way.
+                        </p>
+                        <p>
+                            The core of the app is built on crowdsourcing via a reinforcement learning model which prioritizes novel song discovery (i.e. "You've showed little to no interest in this artist or genre before, but everything points to you enjoying it, check it out?")
+                        </p>
+                        <p>
+                            This app is built for people who feel like they live on musical discovery or even just want a glimpse into their musical diet and how it could expand.
+                        </p>
+                        <p>
+                            Under the hood, musiStats is a Python/FastAPI service with PostgreSQL for persistence, async pipelines to grow and maintain the
+                            internal music library, and a small reinforcement learning component for ranking candidate tracks based on user history and feedback.
+                        </p>
+                        <p>
+                            The goal is not for users to like everything they hear, in fact I might label that a failure.
+                            <br>If a user finds a couple new artists or songs every week that they enjoy, and it broadens their musical horizons, then that is a win.
+                        </p>
+                    
+                    <h3>Progress Update</h3>
+                        <ul>
+                            <li>Developed async data pipelines for the expansion of the internal library of 
+                                <br>songs/albums/artists of interest from user libraries.</li>
+                            <li>Developed computational pipelines for things like a user's favorite artists/genres/songs, most similar music buddy, and other information that assists in finding something that you like and haven't heard yet.</li>
+                            <li>Developed a rudimentary RL model with the ability to recommend a song to a particular user, optimizing for discovery rather than guaranteed comfort picks.</li>
+                        </ul>
+                    <!-- <b>Currently working on</b> making recommendations more palatable and targeted, as well as the app's identity. -->
+                        <p>
+                            <b>Currently working on</b> improving recommendation quality and user-facing identity; tuning how aggressively the model prioritizes novelty vs comfort, and how that's surfaced in the UI.
+                        </p>
+
+                    <h3>Why?</h3>
+                        <p>
+                            This is a passion project for me, driven by my own frustrations and wants out of life. I figured if I couldn't get it somewhere else I may as well build it myself.
+                            <br> I found discovering new songs and artists for myself extremely difficult if I did not commit a lot of time to exploring the landscape at random. 
+                            <br>Streaming services like Apple Music and Spotify weren't doing a good enough job. I concluded that there must be some easier way, and I remembered that a lot of the best music I find comes from my friends or strangers that shared it with me, so I built a system that facilitates that. 
+                        </p>
                 </div>
             </article>
 
-            <!-- Template for new entries -->
-            <!-- Copy and paste this to add new devlogs
+            <!-- Add more devlog entries below -->
+
+            <!-- Template for new entries
             <article class="devlog-entry">
                 <div class="devlog-header">
                     <h2>Your Project Title</h2>
@@ -125,13 +185,10 @@
                 <a href="https://github.com/krypticlogan" target="_blank" aria-label="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn">
+                <a href="https://linkedin.com/in/lzjones" target="_blank" aria-label="LinkedIn">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="mailto:your.email@example.com" aria-label="Email">
+                <a href="mailto:logan.zchjones@gmail.com" aria-label="Email">
                     <i class="fas fa-envelope"></i>
                 </a>
             </div>
