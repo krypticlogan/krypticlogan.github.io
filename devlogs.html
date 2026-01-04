@@ -119,17 +119,17 @@
                             Put simply, it's an app to build and grow your musical personality, keeping track <br> (and offering control) every step of the way.
                         </p>
                         <p>
-                            The core of the app is built on crowdsourcing via a reinforcement learning model which prioritizes novel song discovery (i.e. "You've showed little to no interest in this artist or genre before, but everything points to you enjoying it, check it out?")
+                            Under the hood, musiStats is a Python/FastAPI service with PostgreSQL for persistence, async pipelines to grow and maintain the
+                            internal music library, and a small reinforcement learning component for ranking candidate tracks based on user history and feedback.
+                        </p>
+                        <p>
+                            The core of the app is built on crowdsourcing via a reinforcement learning model which prioritizes novel song discovery (e.g. "You've showed little to no interest in this artist or genre before, but everything points to you enjoying it, check it out?")
                         </p>
                         <p>
                             This app is built for people who feel like they live on musical discovery or even just want a glimpse into their musical diet and how it could expand.
                         </p>
                         <p>
-                            Under the hood, musiStats is a Python/FastAPI service with PostgreSQL for persistence, async pipelines to grow and maintain the
-                            internal music library, and a small reinforcement learning component for ranking candidate tracks based on user history and feedback.
-                        </p>
-                        <p>
-                            The goal is not for users to like everything they hear, in fact I might label that a failure.
+                            The goal is not for users to like everything they hear, in fact I may label that a failure.
                             <br>If a user finds a couple new artists or songs every week that they enjoy, and it broadens their musical horizons, then that is a win.
                         </p>
                     
