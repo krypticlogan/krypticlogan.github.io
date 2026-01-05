@@ -38,15 +38,15 @@
                 </div>
                 <div class="devlog-tags">
                     <span class="tag">Zig</span>
-                    <span class="tag">Low-level programming</span>
-                    <!-- <span class="tag">React</span> -->
-                    <!-- <span class="tag">Node.js</span> -->
+                    <span class="tag">Low-level</span>
+                    <span class="tag">Systems</span>
+                    <span class="tag">Performance</span>
                 </div>
                 <div class="devlog-content">
                     <h3>What I'm Building</h3>
                         <p>
-                            It's simple on its face: A Gameboy!
-                            <br>In more words, its a cycle-accurate emulation of the original DMG Gameboy (GBC planned), that aims to replicate the real behavior and timing quirks that children of the 90s grew up on.
+                            It's simple on its face: A Game Boy!
+                            <br>In more words, its a cycle-accurate emulation of the original DMG Game Boy (GBC planned), that aims to replicate the real behavior and timing quirks that children of the 90s grew up on.
                             Along with that I want it to be accessible to others, so I will be porting it to WebASM, which Zig makes incredibly easy. 
                         </p>
                     
@@ -54,6 +54,7 @@
                         <ul>
                             <h4>So far I have:</h4> 
                                 <li>Designed the core elements of the system (CPU, GPU (PPU), MMIO and<br> timing constraints)</li>
+                                <li>Iteratively tested for memory and computational performance using tools like <i>Tracy</i></li>
                             <h4>Currently I am:</h4> 
                                 <li>Working out kinks with timing and fixing failing test cases.</li>
                                 <li>Designing a performant rendering system that stays true to the original hardware.</li>
@@ -65,10 +66,14 @@
                         </p>
                         <ul>
                             <li> <b>Synchronization and timing</b> | 
-                                Getting the CPU, PPU, timers, and other peripherals to remain in sync with each other for millions of cycles required a good amount of upfront thought and careful design. I use a <b>shared clock ideology</b>, where the <b>CPU syncs real-time, and races to keep up with where it should be and peripherals walk in lockstep</b> with the CPU. If we end up slightly ahead, the system just sleeps until it's behind again. This keeps everything synced with <b>real-time, and true to the original hardware</b>'s 59.7 FPS.</li>
-
+                                Getting the CPU, PPU, timers, and other peripherals to remain in sync with each other for millions of cycles required a good amount of upfront thought and careful design. I use a <b>shared clock ideology</b>, where the <b>CPU syncs real-time, and races to keep up with where it should be and peripherals walk in lockstep</b> with the CPU. If we end up slightly ahead, the system just sleeps until it's behind again. This keeps everything synced with <b>real-time, and true to the original hardware</b>'s 59.7 FPS.
+                            </li>
                             <li> <b>Edge cases and nuance</b> | 
-                                Systems like these have <b>lots of little things</b> that need to be considered along with the bigger picture. Finding what these little things are, and being able to <b>handle them gracefully</b> within the system that I created was highly motivating and <b>built into the design</b>.</li>
+                                Systems like these have <b>lots of little things</b> that need to be considered along with the bigger picture. Finding what these little things are, and being able to <b>handle them gracefully</b> within the system that I created was highly motivating and <b>built into the design</b>.
+                            </li>
+                            <li> <b>Performance</b> | 
+                                Performance has not been a glaring issue, but it is almost always worth mentioning. In a tight-looped and computationally extensive system such as the Game Boy, performance was something I had to keep in mind. It shouldn't be extremely difficult to emulate a 4.19 MHz console in real time on a modern machine, but certain design choices make this goal impossible. It was necessary to ensure that I was actively considering performance in development, as little things (like an inefficient data representation or slow computation) add up quickly. RAM hoarders are no fun either, so getting the memory footprint to be as small as possible is always a goal. Tools like Tracy and htop helped tremendously here.
+                            </li>
                         </ul>
                     
                     <h3>What I Learned</h3>
@@ -89,7 +94,7 @@
                             I learned about a new programming language called <a href="https://ziglang.org/">Zig</a> and thought it was an interesting approach to programming that aligns with my philosophy.
                         </p>
                         <p>
-                            I wanted to learn more about low-level programming and how computers really work, even though I kinda already had a good idea of this I hadn't truly <i>done</i> it yet.
+                            I wanted to learn more about low-level programming and how computers really work. I had a decent mental model, but I hadn't <i>built</i> it yet.
                             <br>So, after creating a simple snake game in the terminal, as well as a Chip8 Emulator, I decided something bigger was in order.
                             <br>Prior to this project, I'd completed many projects in Python, a few in Java and C, but none of them hit me with the same enjoyment that making a complete retro game console in Zig did.
                         </p>
@@ -113,11 +118,13 @@
                 <div class="devlog-tags">
                     <span class="tag">Python</span>
                     <span class="tag">FastAPI</span>
+                    <span class="tag">Data Pipelines</span>
+                    <span class="tag">Machine Learning</span>
                 </div>
                 <div class="devlog-content">
                     <h3>What is it?</h3>
                         <p>
-                            Put simply, it's an app to view and grow your musical personality, keeping offering insight every step of the way.
+                            Put simply, it's an app to view and grow your musical personality, offering insight every step of the way.
                         </p>
                         <p>
                             Under the hood, musiStats is a Python/FastAPI service with PostgreSQL for persistence, async pipelines to grow and maintain the
