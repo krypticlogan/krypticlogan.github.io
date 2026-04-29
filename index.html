@@ -1,113 +1,201 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>krypticlogan - Developer Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <a href="index.html">krypticlogan</a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>krypticlogan - Developer Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <a href="index.html">krypticlogan</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="devlogs.html">Devlogs</a></li>
+                </ul>
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="devlogs.html">Devlogs</a></li>
-            </ul>
-        </div>
-    </nav>
+        </nav>
 
-    <header class="hero">
-        <div class="container">
-            <h1>Nice to see you, I'm <span class="highlight"><b>Logan Jones</b></span></h1>
-            <p class="subtitle">Backend / Systems Engineer</p>
-            <p class="status-line">
-                Currently building a Game Boy emulator in Zig 
-                <!-- and working on an RL-powered music recommender. -->
-            </p>
-            <div class="social-bar">
-                <span class="social-bar-label">Find me via</span>
-                <div class="social-bar-links">
-                    <a class="social-link" href="https://github.com/krypticlogan" target="_blank" rel="noreferrer">
-                    <i class="fab fa-github"></i>
-                    <span>GitHub</span>
-                    </a>
-                    <a class="social-link" href="https://linkedin.com/in/lzjones" target="_blank" rel="noreferrer">
-                    <i class="fab fa-linkedin"></i>
-                    <span>LinkedIn</span>
-                    </a>
-                    <a class="social-link" href="mailto:logan.zchjones@gmail.com">
-                    <i class="fas fa-envelope"></i>
-                    <span>Email</span>
-                    </a>
+        <header class="hero">
+            <div class="container">
+                <h1>
+                    Nice to see you, I'm
+                    <span class="highlight"><b>Logan Jones</b></span>
+                </h1>
+                <p class="subtitle">Backend / Systems Engineer</p>
+                <p class="status-line">
+                    Currently expirmenting with compile-time neural network
+                    engine.
+                    <!-- and working on an RL-powered music recommender. -->
+                </p>
+                <div class="hero-meta">
+                    <div class="now-listening" aria-live="polite">
+                        <span class="now-pill">
+                            <i class="fa-solid fa-music"></i>
+                            <span class="now-label">Listening to</span>
+                        </span>
+                        <a
+                            class="now-track"
+                            href="https://open.spotify.com"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Spotify track placeholder
+                        </a>
+                    </div>
+                    <div class="social-bar">
+                        <span class="social-bar-label">Find me on</span>
+                        <div class="social-bar-links">
+                            <a
+                                class="social-link"
+                                href="https://github.com/krypticlogan"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a
+                                class="social-link"
+                                href="https://linkedin.com/in/lzjones"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a
+                                class="social-link"
+                                href="mailto:logan.zchjones@gmail.com"
+                            >
+                                <i class="fas fa-envelope"></i>
+                                <span>Email</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <main class="container">
-        <section class="dev-archetype">
-            <h2>My Dev Archetype</h2>
-            <div class="archetype-content">
-                <p>
-                    I'm a <b>backend/systems engineer</b> who likes solving hard problems in ways that make sense.
-                    I care about how good things feel to use and how well they work.  
-                    Both are necessary, otherwise you end up either useless or clunky.
-                </p>
+        <main class="container">
+            <section class="dev-archetype">
+                <h2>My Dev Archetype</h2>
+                <div class="archetype-content">
+                    <p>
+                        I'm a <b>backend/systems engineer</b> who likes solving
+                        hard problems in ways that make sense. I care about how
+                        good things feel to use and how well they work. Both are
+                        necessary, otherwise you end up either useless or
+                        clunky.
+                    </p>
 
-                <p>
-                    I tinker with ML models and game development on occasion, but the real fun is in 
-                    <b>connecting the pieces into systems that are fast, reliable, and pleasant to work with</b>.
-                </p>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <h3>Systems Development</h3>
-                        <p>
-                            Designing the pieces that never get seen in ways that make sense and guarantee performance<br>
-                        </p>
-                    </div>
-                    <div class="skill-card">
-                        <h3>Continuous Learning</h3>
-                        <p>
-                            Always exploring new ways to approach a problem, pushing toward better, 
-                            more principled solutions
-                        </p>
-                    </div>
-                    <div class="skill-card">
-                        <h3>Sharing Knowledge</h3>
-                        <p>
-                            Learning from others is a necessity, as some problems become a lot simpler given a fresh perspective
-                        </p>
+                    <p>
+                        Sometimes I work with ML models or game development on
+                        occasion, but most of the time I find myself
+                        <b
+                            >connecting the pieces into systems that are fast,
+                            reliable, and pleasant to work with</b
+                        >.
+                    </p>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <h3>Systems Development</h3>
+                            <p>
+                                Designing the pieces that never get seen in ways
+                                that make sense and guarantee performance<br />
+                            </p>
+                        </div>
+                        <div class="skill-card">
+                            <h3>Continuous Learning</h3>
+                            <p>
+                                Always exploring new ways to approach a problem,
+                                pushing toward better, more principled solutions
+                            </p>
+                        </div>
+                        <div class="skill-card">
+                            <h3>Sharing Knowledge</h3>
+                            <p>
+                                Learning from others is a necessity, as some
+                                problems become a lot simpler given a fresh
+                                perspective
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="cta-section">
-            <h2>Check Out My Projects</h2>
-            <p>Follow my development journey and see what I'm building</p>
-            <a href="devlogs.html" class="btn">View Devlogs</a>
-        </section>
-    </main>
+            <section class="cta-section">
+                <h2>Check Out My Projects</h2>
+                <p>Follow my development journey and see what I'm building</p>
+                <a href="devlogs.html" class="btn">View Devlogs</a>
+            </section>
+        </main>
 
-    <footer>
-        <div class="container">
-            <div class="social-links">
-                <a href="https://github.com/krypticlogan" target="_blank" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://linkedin.com/in/lzjones" target="_blank" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="mailto:logan.zchjones@gmail.com" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
+        <footer>
+            <div class="container">
+                <div class="social-links">
+                    <a
+                        href="https://github.com/krypticlogan"
+                        target="_blank"
+                        aria-label="GitHub"
+                    >
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                        href="https://linkedin.com/in/lzjones"
+                        target="_blank"
+                        aria-label="LinkedIn"
+                    >
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a
+                        href="mailto:logan.zchjones@gmail.com"
+                        aria-label="Email"
+                    >
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <p>&copy; 2026 krypticlogan.</p>
             </div>
-            <p>&copy; 2026 krypticlogan. Built with passion and code.</p>
-        </div>
-    </footer>
-</body>
+        </footer>
+        <script>
+            const nowTrackEl = document.querySelector(".now-track");
+
+            if (nowTrackEl) {
+                fetch("now-playing.json", { cache: "no-store" })
+                    .then((response) => (response.ok ? response.json() : null))
+                    .then((data) => {
+                        if (!data) {
+                            return;
+                        }
+
+                        if (data.isPlaying && data.title) {
+                            const artist = data.artist
+                                ? ` — ${data.artist}`
+                                : "";
+                            nowTrackEl.textContent = `${data.title}${artist}`;
+
+                            if (data.url) {
+                                nowTrackEl.href = data.url;
+                                nowTrackEl.target = "_blank";
+                                nowTrackEl.rel = "noreferrer";
+                            }
+
+                            return;
+                        }
+
+                        nowTrackEl.textContent = "Not playing right now";
+                        nowTrackEl.removeAttribute("href");
+                    })
+                    .catch(() => {});
+            }
+        </script>
+    </body>
 </html>
