@@ -1,4 +1,10 @@
 {
-  "isPlaying": false,
-  "updatedAt": "2026-04-30T04:08:02.991Z"
+  "isPlaying": true,
+  "type": "track",
+  "title": "Myron",
+  "artist": "Lil Uzi Vert",
+  "album": "Eternal Atake (Deluxe) - LUV vs. The World 2",
+  "url": "https://open.spotify.com/track/56uXDJRCuoS7abX3SkzHKQ",
+  "cover": "https://i.scdn.co/image/ab67616d0000b273128d95d09561d556c65bc08b",
+  "updatedAt": "2026-04-30T04:49:44.405Z"
 }
