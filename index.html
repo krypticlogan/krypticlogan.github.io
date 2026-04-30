@@ -176,7 +176,7 @@
                             return;
                         }
 
-                        if (data.isPlaying && data.title) {
+                        if (data.title) {
                             const artist = data.artist
                                 ? ` — ${data.artist}`
                                 : "";
@@ -191,7 +191,7 @@
                             return;
                         }
 
-                        nowTrackEl.textContent = "Not playing right now";
+                        nowTrackEl.textContent = "No recent track yet";
                         nowTrackEl.removeAttribute("href");
                     })
                     .catch(() => {});
