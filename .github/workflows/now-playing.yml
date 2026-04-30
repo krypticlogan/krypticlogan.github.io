@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: now-playing
+  cancel-in-progress: true
+
 jobs:
   update-now-playing:
     runs-on: ubuntu-latest
@@ -35,9 +39,15 @@ jobs:
           if git status --porcelain now-playing.json | grep .; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
+
+            git fetch origin main
+            git rebase origin/main
+
             git add now-playing.json
             git commit -m "Update now playing"
-            git pull --rebase origin main
+
+            git fetch origin main
+            git rebase origin/main
             git push
           else
             echo "No changes to commit."
