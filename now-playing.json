@@ -1,10 +1,10 @@
 {
-  "isPlaying": false,
+  "isPlaying": true,
   "type": "track",
-  "title": "this2shallpass",
-  "artist": "Earl Sweatshirt, SURF GANG",
-  "album": "POMPEII // UTILITY",
-  "url": "https://open.spotify.com/track/3ThvL5ia5649rz4gAm3lQI",
-  "cover": "https://i.scdn.co/image/ab67616d0000b2732da17f0e1d1ff1a6e9ccc424",
-  "updatedAt": "2026-05-06T17:04:24.898Z"
+  "title": "Lobby (int)",
+  "artist": "Earl Sweatshirt",
+  "album": "SICK!",
+  "url": "https://open.spotify.com/track/20lRpW3wCCNLvn0hlupPcG",
+  "cover": "https://i.scdn.co/image/ab67616d0000b273f81fb04069fd4b058284b903",
+  "updatedAt": "2026-05-06T18:48:49.504Z"
 }
