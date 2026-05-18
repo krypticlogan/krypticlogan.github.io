@@ -1,10 +1,5 @@
 {
   "isPlaying": false,
-  "type": "track",
-  "title": "HOLY MATRIMONY",
-  "artist": "DC THE DON",
-  "album": "REBIRTH",
-  "url": "https://open.spotify.com/track/1zd9yBKygkgB2vaKcPyPPX",
-  "cover": "https://i.scdn.co/image/ab67616d0000b27332df5c4520a4fcdd726f6a63",
-  "updatedAt": "2026-05-18T21:52:49.689Z"
+  "updatedAt": "2026-05-18T22:45:39.990Z",
+  "error": "Spotify top-tracks request failed (503): upstream connect error or disconnect/reset before headers. reset reason: overflow"
 }
