@@ -1,10 +1,10 @@
 {
-  "isPlaying": true,
+  "isPlaying": false,
   "type": "track",
-  "title": "Tabula Rasa (feat. Armand Hammer)",
-  "artist": "Earl Sweatshirt, Armand Hammer",
+  "title": "Lobby (int)",
+  "artist": "Earl Sweatshirt",
   "album": "SICK!",
-  "url": "https://open.spotify.com/track/5Qb5Crn9sefQ27M2lKahPM",
+  "url": "https://open.spotify.com/track/20lRpW3wCCNLvn0hlupPcG",
   "cover": "https://i.scdn.co/image/ab67616d0000b273f81fb04069fd4b058284b903",
-  "updatedAt": "2026-07-06T22:48:05.763Z"
+  "updatedAt": "2026-07-06T23:47:28.001Z"
 }
