@@ -1,10 +1,5 @@
 {
   "isPlaying": false,
-  "type": "track",
-  "title": "Huey",
-  "artist": "Earl Sweatshirt",
-  "album": "I Don't Like Shit, I Don't Go Outside: An Album by Earl Sweatshirt",
-  "url": "https://open.spotify.com/track/3iut542DAj1c44VzyA6CpN",
-  "cover": "https://i.scdn.co/image/ab67616d0000b27316ac34a19212811cf922ab71",
-  "updatedAt": "2026-07-14T10:59:37.353Z"
+  "updatedAt": "2026-07-14T12:11:21.187Z",
+  "error": "Spotify top-tracks request failed (502): {\"error\": {\"status\": 502, \"message\": \"An unexpected error occurred. Please try again later.\" } }"
 }
