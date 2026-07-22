@@ -1,10 +1,10 @@
 {
-  "isPlaying": false,
+  "isPlaying": true,
   "type": "track",
-  "title": "Chum",
-  "artist": "Earl Sweatshirt",
-  "album": "Doris",
-  "url": "https://open.spotify.com/track/6plT7nFGiXKSBP9HFSI4ef",
-  "cover": "https://i.scdn.co/image/ab67616d0000b27346f9bf1154c7205b0e8b1667",
-  "updatedAt": "2026-07-22T17:06:21.902Z"
+  "title": "Static",
+  "artist": "LUCKI",
+  "album": "Static",
+  "url": "https://open.spotify.com/track/6mOi11ScFGEjlItIXE1ss1",
+  "cover": "https://i.scdn.co/image/ab67616d0000b2739a1e9c2c7e4d66ace6e831d7",
+  "updatedAt": "2026-07-22T18:17:36.771Z"
 }
