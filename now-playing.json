@@ -1,5 +1,10 @@
 {
   "isPlaying": false,
-  "updatedAt": "2026-07-26T17:31:45.576Z",
-  "error": "Spotify top-tracks request failed (503): "
+  "type": "track",
+  "title": "Chum",
+  "artist": "Earl Sweatshirt",
+  "album": "Doris",
+  "url": "https://open.spotify.com/track/6plT7nFGiXKSBP9HFSI4ef",
+  "cover": "https://i.scdn.co/image/ab67616d0000b27346f9bf1154c7205b0e8b1667",
+  "updatedAt": "2026-07-26T18:36:31.048Z"
 }
