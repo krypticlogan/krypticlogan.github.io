@@ -411,17 +411,6 @@ footer {
 footer span {
   color:#6f667c
 }
-.skip-link {
-  position:fixed;
-  top:-100px;
-  left:20px;
-  padding:12px;
-  background:var(--surface);
-  z-index:5
-}
-.skip-link:focus {
-  top:10px
-}
 .reading-page,.archive-page {
   max-width:760px;
   margin:55px auto 70px
@@ -459,6 +448,17 @@ footer span {
   font-weight:550;
   margin:32px 0 14px
 }
+.devlog-content h1,.devlog-content h2 {
+  color:var(--text);
+  font-size:24px;
+  line-height:1.35;
+  margin:36px 0 16px
+}
+.devlog-content h4 {
+  color:var(--text);
+  font-size:17px;
+  margin:26px 0 12px
+}
 .devlog-content p {
   margin:16px 0
 }
@@ -475,6 +475,27 @@ footer span {
   color:var(--accent);
   text-decoration:underline;
   text-underline-offset:4px
+}
+.devlog-content img {
+  max-width:100%;
+  height:auto
+}
+.devlog-content pre {
+  overflow-x:auto;
+  padding:18px;
+  border:1px solid var(--line);
+  border-radius:6px;
+  background:var(--surface)
+}
+.devlog-content :not(pre)>code {
+  padding:2px 5px;
+  border-radius:3px;
+  background:var(--surface)
+}
+.devlog-content blockquote {
+  margin:20px 0;
+  padding-left:18px;
+  border-left:2px solid var(--accent)
 }
 .devlog-links {
   margin-top:35px
