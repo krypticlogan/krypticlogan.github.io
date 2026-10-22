@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="{{SUMMARY}}" />
+        <title>{{TITLE}} · Logan Jones</title>
+        <link rel="stylesheet" href="/style.css" />
+    </head>
+    <body>
+        <div class="site-shell">
+            <header class="titlebar" data-include="/header.html"></header>
+            <main id="main" class="reading-page">
+                <a class="back-link" href="/posts/">← All posts</a>
+                <article>
+                    <header class="article-header">
+                        <p class="eyebrow">Project notes / Archive</p>
+                        <h1>{{TITLE}}</h1>
+                        <time datetime="{{DATE}}">{{DATE_DISPLAY}}</time>
+                        <p class="article-deck">{{SUMMARY}}</p>
+                    </header>
+                    {{TAGS_BLOCK}}
+                    <div class="devlog-content" data-markdown="{{MARKDOWN_PATH}}">
+                        <p>Loading post…</p>
+                        <noscript><p>JavaScript is required to read this post. <a href="{{MARKDOWN_PATH}}">Open the Markdown</a>.</p></noscript>
+                    </div>
+                    {{PROJECT_LINK}}
+                </article>
+            </main>
+            <footer data-include="/footer.html"></footer>
+        </div>
+        <script src="/site-shell.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/marked@18.0.14/lib/marked.umd.js" defer></script>
+        <script src="/post-renderer.js" defer></script>
+    </body>
+</html>

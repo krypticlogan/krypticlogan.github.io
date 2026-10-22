@@ -1,0 +1,14 @@
+[
+  {
+    "slug": "zigameboy-2025-04",
+    "title": "About zi(g)ameboy",
+    "date": "2025-04",
+    "blurb": "Building a Game Boy in Zig: timing, synchronization, and the hardware details hiding behind a familiar screen."
+  },
+  {
+    "slug": "musistats-2023-06",
+    "title": "About musiStats",
+    "date": "2023-06",
+    "blurb": "A music discovery app built around async data pipelines, listening habits, and finding something unexpected."
+  }
+]
